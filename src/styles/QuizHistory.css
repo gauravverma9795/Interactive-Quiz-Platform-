@@ -1,0 +1,153 @@
+.quiz-history-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz-history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+  }
+  
+  .quiz-history-header h2 {
+    color: #333;
+    margin: 0;
+  }
+  
+  .sort-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sort-controls label {
+    margin-right: 10px;
+    color: #666;
+  }
+  
+  .sort-controls select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .no-history {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  .history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .history-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .history-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .history-item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .category-name {
+    font-weight: bold;
+    color: #3498db;
+  }
+  
+  .attempt-date {
+    color: #777;
+    font-size: 0.9em;
+  }
+  
+  .history-item-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .score-badge {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+  }
+  
+  .score-badge.excellent {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .score-badge.good {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .score-badge.average {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  .score-badge.poor {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .performance-indicator {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-left: 15px;
+    overflow: hidden;
+  }
+  
+  .performance-bar {
+    height: 100%;
+    background-color: #3498db;
+    transition: width 0.5s ease;
+  }
+  
+  @media (max-width: 600px) {
+    .quiz-history-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .sort-controls {
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    .sort-controls select {
+      width: 100%;
+    }
+  
+    .history-item-header {
+      flex-direction: column;
+    }
+  
+    .attempt-date {
+      margin-top: 5px;
+    }
+  }

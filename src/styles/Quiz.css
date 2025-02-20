@@ -1,0 +1,55 @@
+/* Quiz Question Styles */
+.quiz-question-container {
+    padding: 1rem;
+  }
+  
+  .question-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .option-btn {
+    padding: 1rem;
+    background-color: var(--background-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .option-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  .option-btn.selected {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-color: var(--secondary-color);
+  }
+  
+  /* Timer Styles */
+  .timer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 600px) {
+    .options-grid {
+      grid-template-columns: 1fr;
+    }
+  }
